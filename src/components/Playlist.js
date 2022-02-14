@@ -32,24 +32,22 @@ export const Playlist = () => {
    }
 
     return(
-        <div>
+        <main>
+            <h2>Lista de canciones</h2>
             {
                 canciones.map(can =>(
-                    <div key={can.id}>
-                        <div>
-                            <h4>{can.cancion}</h4>
-                            <p>
-                                <span>{can.artista}</span>
-                                <span>{can.genero}</span>
-                            </p>
+                    <div key={can.id} className="cntrCancion">
+                        <div className='infoCancion'>
+                            <h4>{can.cancion} </h4>
+                            <p> <span>{can.artista}</span> {can.genero} </p>
+                            <button onClick={() => borrarCancion(can.id)}>Eliminar</button>
                         </div>
-                        <div>
+                        <div className='frameCancion'>
                             <iframe src={can.frame} name={can.cancion}></iframe>
                         </div>
-                        <button onClick={() => borrarCancion(can.id)}>Eliminar</button>
                     </div>
                 ))
             }
-        </div>
+        </main>
     )
 }

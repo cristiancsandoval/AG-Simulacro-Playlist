@@ -1,0 +1,215 @@
+/*Documento principal de estilos*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h4, label, p, .link, button{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #393E46;
+}
+
+.header{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #222831;
+    box-shadow: 0px 3px 15px 0px #D65A31;
+}
+
+.header h1{
+    margin-left: 15px;
+    font-size: 30px;
+    color:#EEEEEE;
+    flex-grow: 1;
+}
+
+.header h1 span{
+    font-size: 14px;
+    color:#D65A31; 
+}
+
+.header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header nav .link{
+    color: #EEEEEE;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 20px;
+}
+
+.header nav .link:hover{
+    color:#D65A31;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h2{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+    color: #EEEEEE;
+    font-weight: normal;
+}
+
+main .cntrCancion{
+    padding: 10px;
+    margin: 20px 0;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 0px #222831;
+    transition: all 0.3s ease-in-out;
+}
+
+main .cntrCancion:hover{
+    background-color: #222831;
+}
+
+main .cntrCancion .infoCancion{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+main .cntrCancion .infoCancion h4{
+    font-size: 20px;
+    color: #D65A31;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+main .cntrCancion .infoCancion p{
+    font-size: 14px;
+    color: #222831;
+    text-transform: uppercase;
+}
+
+main .cntrCancion:hover .infoCancion p{
+    color: #393E46;
+}
+
+main .cntrCancion .infoCancion p span{
+    color: #EEEEEE;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-right: 5px;
+}
+
+main .cntrCancion .frameCancion iframe{
+    width: 100%;
+    height: 80px;
+    border: none;
+    border-radius: 8px;
+}
+
+main .cntrCancion .frameCancion{
+    width: 450px;
+    border-radius: 8px;
+}
+
+main .cntrCancion button{
+    width: 80px;
+    margin: 3px 0;
+    padding: 2px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    color: #EEEEEE;
+    background-color: #222831;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+main .cntrCancion:hover button{
+    background-color: #393E46;
+    display: block;
+}
+
+main .cntrCancion button:hover{
+    color: #222831;
+    background-color: #D65A31;
+}
+
+main form{
+    width: 900px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 0px #222831;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main form .formElemento{
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main form .formElemento label{
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    color: #EEEEEE;
+}
+
+main form .formElemento input{
+    width: 100%;
+    height: 30px;
+    margin: 3px;
+    padding: 0 5px;
+    font-size: 18px;
+    text-align: left;
+    color: #222831;
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 8px;
+}
+
+main form .formElemento button{
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    color: #EEEEEE;
+    background-color: #222831;
+    position: absolute;
+    bottom: 45px;
+}
+
+main form .formElemento button:hover{
+    color: #222831;
+    background-color: #D65A31;
+}
