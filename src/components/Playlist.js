@@ -44,7 +44,7 @@ export const Playlist = () => {
                             </p>
                         </div>
                         <div>
-                            <iframe src={can.frame} ></iframe>
+                            <iframe src={can.frame} name={can.cancion}></iframe>
                         </div>
                         <button onClick={() => borrarCancion(can.id)}>Eliminar</button>
                     </div>
